@@ -13,7 +13,7 @@ It currently supports load balancing algorithms:\
 This project based on Gin.
 
 ## Install
-`> git clone https://github.com/zehuamama/balancer.git`
+`> git clone https://github.com/annie-jpg/gateway-go.git`
 
 ## Characteristic
 ### Wildcard (/* or /**)
