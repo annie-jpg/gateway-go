@@ -8,14 +8,7 @@ health_check_interval: 3      # health check interval (second)
 # 0 refers to no limit to the maximum number of requests
 max_allowed: 100
 location:                     # route matching for reverse proxy
-  - pattern: /gate/v1/api/product/**
-    method: GET
-    remove_prefix: true
-    proxy_pass:                   # URL of the reverse proxy
-      - "http://localhost:8081"
-      - "http://localhost:8082"
-    balance_mode: round-robin     # load balancing algorithm
-  - pattern: /gate/v1/api/consumer/**
+  - pattern: /gate/v1/api/**
     method: GET
     remove_prefix: true
     proxy_pass:                   # URL of the reverse proxy
